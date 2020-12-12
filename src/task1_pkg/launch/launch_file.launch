@@ -1,5 +1,0 @@
-<launch>
-<!-- CMDvel launch file -->
-<node pkg="task1_pkg" type="publisher.py" name="out_and_back" output="scree
-</node>
-</launch>
