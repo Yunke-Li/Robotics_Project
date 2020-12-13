@@ -13,10 +13,10 @@
 ## Technical Documentation 
 
 - [Introduction](#Introduction)
-- [Task Description](#Task Description)
-- [Task 1 Move the robot](#Task 1 Move the robot)
-- [Task 3 Path Planning](#Task 3 Path Planning)
-- [Task 4 Way points](#Task 4 Way points)
+- [Task Description](#Task-Description)
+- [Task 1 Move the robot](#Task-1-Move-the-robot)
+- [Task 3 Path Planning](#Task-3-Path-Planning)
+- [Task 4 Way points](#Task-4-Way-points)
 - [References](#References)
 
 ## Introduction
