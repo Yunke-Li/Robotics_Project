@@ -15,6 +15,7 @@
 - [Introduction](#Introduction)
 - [Task Description](#Task-Description)
 - [Task 1 Move the robot](#Task-1-Move-the-robot)
+- [Task 2 Map Creation](#Task-2-Map-Creation)
 - [Task 3 Path Planning](#Task-3-Path-Planning)
 - [Task 4 Way points](#Task-4-Way-points)
 - [References](#References)
@@ -115,7 +116,7 @@ Vector3  linear
 Vector3  angular
 ```
 
-#### Task 2: Map Creation
+#### Task 2 Map Creation
 ##### Analysis
 Node: **slam_gmapping**<br><br>
 The node obtains data in the *sensor_msgs/Scan* message and to visualize the map obtained through topic or services. This node comes from the package Gmapping.
