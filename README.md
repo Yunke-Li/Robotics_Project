@@ -1,14 +1,24 @@
 
-# Robotics Project - Navigation for Turtlebot3
+# Robotics Project - Navigation on Turtlebot3
 
 ![](https://www.vibot.org/uploads/2/3/5/8/2358523/vibot3g_14.png)
 <br>
-MSCV2, University Of Burgundy (VIBOT)
-Supervisor: <br>
-Raphael DUVERNE, Daniel BRAUN & Ralph SEULIN
+**MSCV2, University Of Burgundy (VIBOT)**
 <br>
-Contributors: <br>
-Yunke LI & Qi YANG
+**Supervisor: <br>**
+**Raphael DUVERNE, Daniel BRAUN & Ralph SEULIN**
+<br>
+**Contributors: <br>**
+**Yunke LI & Qi YANG**
+## Technical Documentation 
+
+- [Introduction](#Introduction)
+- [Task Description](#Task Description)
+- [Task 1 Move the robot](#Task 1 Move the robot)
+- [Task 3 Path Planning](#Task 3 Path Planning)
+- [Task 4 Way points](#Task 4 Way points)
+- [References](#References)
+
 ## Introduction
 
 ROS (Robot Operating System) is a highly flexible software 
@@ -68,7 +78,7 @@ cd /catkin_ws
 source devel/setup.bash
 ```
 ### Usage example 
-#### Task 1: Move the robot
+#### Task 1 Move the robot
 ##### Analysis
 Topic：*/cmd_vel* <br><br>
 This topic is the one used to send velocity commands to the base of the robot. So, by sending a message through this topic, we can make the robot start moving and get the translation and rotation data.
@@ -172,10 +182,10 @@ free_thresh: 0.196
 ```
 ![](https://github.com/Yunke-Li/Figure_Repository/blob/main/RoboticProject/my_map.png?raw=true)
 
-Till now, we have successfully create the map of the whole cafe which 
+Till now, we have successfully created the map of the whole cafe which 
 enables us to go to the next task.
 
-#### Task 3: Path Planning
+#### Task 3 Path Planning
 ##### Analysis
 Node: **amcl**<br><br>
 The AMCL (Adaptive Monte Carlo Localization) package provides the amcl node, which uses the MCL system in order to track the localization of a robot moving in a 2D space.
@@ -220,8 +230,12 @@ in Map element
 * Use the 2D Nav Goal tool in order to send a goal pose to the robot. Make sure to select
  an unoccupied or unexpected location.
  
-#### Task 4: Way points
+#### Task 4 Way points
 In order to let the robot pass through given way points, 
+
+## References
+  - [WIKI ROS](http://wiki.ros.org/)
+  - [The Construct Platform](http://theconstructsim.com)
 
 
 ## Authors 
