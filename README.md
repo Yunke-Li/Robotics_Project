@@ -10,7 +10,7 @@
 <br>
 **Contributors: <br>**
 **Yunke LI & Qi YANG**
-## Technical Documentation 
+## Index
 
 - [Introduction](#Introduction)
 - [Task Description](#Task-Description)
@@ -232,7 +232,37 @@ in Map element
  an unoccupied or unexpected location.
  
 #### Task 4 Way points
-In order to let the robot pass through given way points, 
+Now, our robot can successfully navigate to a certain target location. 
+But if we want the robot to finally reach the target position after 
+passing through several different coordinate points, we need to use 
+a package named follow_waypoints, which will track the estimate 
+pose that we place in RVIZ and stores it. Then publish the stored
+waypoints to the move_base node in order. Finally, the robot will
+ plan the path by navigating all the waypoints to reach the target position.
+
+
+
+* Download the follow_waypoints package
+```
+git clone https://github.com/danielsnider/follow_waypoints.git
+```
+
+* Launch navigation task process we implemented before
+```
+roslaunch t3_navigation start_navigation.launch
+```
+
+
+* Launch follow_waypoints
+```
+roslaunch follow_waypoints follow_waypoints.launch
+```
+
+* Start RVIZ, and add a PoseArray element, susbcribed to the topic */waypoints*
+* Set the waypoints
+* Publish in the topic */path_ready* to start sending waypoints to the movebase
+
+ 
 
 ## References
   - [WIKI ROS](http://wiki.ros.org/)
